@@ -1,0 +1,66 @@
+.buttonStyle{
+    margin: 20px;
+    color: black;
+    font-weight: 700  ;
+}
+
+.buttonSelected{
+composes: buttonStyle;
+color: red;
+font-weight: 900;
+}
+
+.flexCol{
+    display: flex;
+    flex-direction: column;
+}
+
+.flexRow{
+    display: flex;
+    flex-direction: row;
+}
+
+.justifyCenter{
+    justify-content: center;
+}
+
+.buttonRow{
+    composes: flexRow;
+    composes: justifyCenter;
+    height: 20%;
+}
+
+.prevNext{
+    margin: 50px;
+    composes: flexRow;
+    justify-content: space-around;
+    
+    height: 20%;
+}
+
+.repoContainer{
+    composes:flexRow;
+    justify-content: space-around;
+    
+    height: 60%;
+}
+
+.singleRepoContainer{
+    composes:flexCol;
+    align-items: center;
+}
+
+.repoFont{
+
+}
+
+.repoName{
+
+}
+
+.imageStyle{
+height: 100px;
+width: 100px;
+margin: "30px";
+border-radius: 100px;
+}
